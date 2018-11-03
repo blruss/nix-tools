@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+#Install expect with yum install expect
+#Execute script by running expect nameofscript.expect
+
+#Auto install TKTGDat.sh using expect.
+
+spawn /tmp/TKGrid_REP
+set timeout 30
+expect "(yes/NO) "
+send "NO\r"
+expect "Enter full path to machine list."
+send "/etc/gridhosts\r";
+expect "(YES/no)"
+send "YES\r"
+interact
