@@ -1,0 +1,5 @@
+#cloud-config
+runcmd:
+ - [ curl, "http://hostname.example.com/setup.sh", -o, /tmp/setup.sh ]
+ - [ chmod, +x, /tmp/setup.sh ]
+ - /tmp/setup.sh
