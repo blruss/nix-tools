@@ -1,0 +1,36 @@
+
+#!/usr/bin/expect
+#Install expect with yum install expect
+#Execute script by running expect nameofscript.expect
+#`locate sasep-admin.sh` -env | grep HADOOP_HOME | cut -d"=" -f2
+
+#`locate sasep-admin.sh` -env | grep HADOOP_HOME | cut -d"=" -f2
+
+#set cmd1 {`locate sasep-admin.sh` -env | grep HADOOP_HOME | cut -d"=" -f2}
+
+
+spawn ./TKGrid_REP_Linux_x86_64.sh
+set timeout 30
+expect "(Teradata? (yes/NO) "
+send "NO\r";
+expect "Greenplum? (yes/NO)"
+send "NO\r";
+expect "Hadoop? (yes/NO)"
+send "yes\r";
+expect "i.e.: /usr/java/jdk1.7.0_09/jre"
+send "/usr/jdk64/jdk1.8.0_60/jre\r";
+expect "Hadoop client jars."
+send "/sas94/hadoop/config/Lev1/Hadoop_Server/lib\r\r";
+expect "none."
+send "\r";
+expect "Oracle? (yes/NO)";
+send "NO\r";
+expect "SAP HANA? (yes/NO)"
+send "NO\r";
+expect "(Enter path to TKGrid install)"
+send "/opt/TKGrid\r";
+expect "separated by colons (:)"
+send "\r";
+expect "Perform copy?  (YES/no)"
+send "YES\r"
+interact
