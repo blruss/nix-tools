@@ -1,3 +1,5 @@
+#official repo https://download.docker.com/linux/centos/7/x86_64/stable/Packages/
+
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
