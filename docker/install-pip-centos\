@@ -1,0 +1,14 @@
+yum -y update
+
+#yum -y install python-pip
+
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+python get-pip.py
+
+pip -V
+
+pip install --upgrade pip
+
+pip install --upgrade setuptools
+
+pip -V
