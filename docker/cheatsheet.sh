@@ -25,6 +25,9 @@ kubectl run --image=destiny.unx.sas.com:5000/tsad-sasawb-centrify-working:v1 --p
 "registry-mirrors": ["http://destiny.unx.sas.com:5000"]
 }
 
+sysctl -a
+#https://computingforgeeks.com/how-to-disable-netfilter-on-a-kvm-bridge/
+
 cat <<EOF >  /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1docker
