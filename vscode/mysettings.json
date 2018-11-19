@@ -1,0 +1,20 @@
+{
+
+    "window.zoomLevel": 1,
+    "editor.mouseWheelZoom": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
+    "update.showReleaseNotes": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "search.followSymlinks": false,
+    "search.location": "panel",
+    "search.smartCase": true,
+    "files.defaultLanguage": "log",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.confirmOnExit": true,
+    "workbench.statusBar.feedback.visible": false,
+}
